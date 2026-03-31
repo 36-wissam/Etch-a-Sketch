@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etch A Sketch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ETCH A SKETCH</h1>
+
+
+<!-- Grid Size Control , Color Picker , Clear Button -->
+<div class="controls">
+
+<label>Grid Size: <span id="sizeValue">16</span></label>
+<input type="range" id="slider" min="16" max="32" value="16">
+
+<input type="color" id="colorPicker">
+
+<button id="rainbow">RAINBOW</button>
+<button id="clear">CLEAR</button>
+
+</div>
+
+<!-- grid container -->
+<div class="grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
