@@ -16,15 +16,13 @@ function createGrid(size){
 
 grid.innerHTML = '';
 
-const squareSize = 636 / size;
+grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
 for(let i = 0; i < size * size; i++){
 
 const cell = document.createElement('div');
 cell.classList.add('cell');
-
-cell.style.width = squareSize + 'px';
-cell.style.height = squareSize + 'px';
 
 cell.addEventListener('mouseover', () => {
 
